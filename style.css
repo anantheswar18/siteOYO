@@ -1,0 +1,379 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  
+  .nav {
+    height: 100px;
+    width: 100%;
+    background-color:white;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+    font-style: bold;
+  }
+  .logo{
+    position: absolute;
+    width: 106px;
+    height: 104px;
+    font-size: 50x;
+    margin-left: 80px;
+    margin-top: -12px;
+    background-color: white;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 60px 13px 10px;
+    text-decoration: none;
+    color: #181717;
+  }
+  
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+  /* secondrow.......................................................... */
+.secondrow{
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    background-color:white;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    margin-top: 0;
+    padding: 2px 60px 0!important;
+}
+.button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 14px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 4px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: grey;
+}
+.searchcontainer{
+    background: linear-gradient(135.46deg,#d11450,#df293a);
+    width: 100%;
+    padding: 10px 0 32px;
+    margin-bottom: 18px;
+    position: relative;
+    box-sizing: border-box;
+    height: 300px;
+}
+body{
+    background: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 125%;
+    border: 3px solid white;
+    border-right: none;
+    padding: 25px;
+    height: 35px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+    margin-left: -201px;
+  }
+  
+  .searchTerm:focus{
+    color: black;
+    
+  }
+  
+  .searchButton {
+    width: 135px;
+    height: 56px;
+    border: 1px solid #b2bbbd;
+    background: #00cc35;
+    text-align: center;
+    color: #1a1919;
+    border-radius: -1 6px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Thirdrom...................................................  */
+
+  .thirdrowimg{
+    
+    width: 100%;
+    padding: 10px 0 32px;
+    margin-bottom: 18px;
+    position: relative;
+    box-sizing: border-box;
+    height: 300px;
+    position: absolute;
+    margin-top: -15px
+    
+  }
+  /* Fourthrow.............................................  */
+  
+  .fourthrowimg{
+    width: 86%;
+    padding: 10px 0 32px;
+    margin-bottom: 18px;
+    position: relative;
+    box-sizing: border-box;
+    height: 160px;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 74px;
+  }
+/* fifthrow.................................................  */
+.fifthrowimg{   
+    width: 50%;
+    padding: -31px 0 40px;
+    margin-bottom: 20px;
+    position: relative;
+    box-sizing: border-box;
+    height: 425px;
+    position: absolute;
+    margin-top: 450px;
+    margin-left: -2px;
+    cursor: pointer;
+}
+.fifthrowimgtwo{
+    width: 50%;
+    padding: -31px 0 40px;
+    margin-bottom: 20px;
+    position: relative;
+    box-sizing: border-box;
+    height: 425px;
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 674px;
+    
+
+}
+/* sixthrow..............................  */
+.sixthrow{
+  width: 100%;
+  height: 505px;
+  background-color: #6d787d;
+  margin-top: 900px;
+}
+.footerMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 70px;
+  border-bottom: 1px solid white;
+  
+}
+.footerHead {
+  background-color: #333333;
+  padding: 80px 80px 16px;
+  font-size: 25px;
+  margin-top: 30px;
+  
+}
+#footerimg{
+  position: absolute;
+  width: 120px;
+  height: 65px;
+  font-size: 50x;
+  margin-left: -55px;
+  margin-top: -30px;
+  
+}
+.world{
+  font-size: 22px!important;
+  margin: auto;
+  font-weight: 700;
+  color: white;
+  font-size: large;
+  margin-left: 70px;
+  margin-bottom: 50px;
+}
+#listbtn{
+  height: 50px;
+  width: 220px;
+  margin-right: -27px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+.footerAppIcons {
+  background-color: #6d787d;
+  color: #fff;
+  height: 170px;
+  width: 350px;
+  margin-top: -20px;
+}
+#appicon{
+  height: 132px;
+  width: 200px;
+  margin-left: 80px;
+  margin-top: -5px;
+  cursor: pointer;
+}
+#download{
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+  margin-left: 50px;
+  
+  
+}
+#about {
+  position: absolute;
+  margin-left: 400px;
+  margin-top: -155px;
+  color: white;
+}
+#official{
+  position: absolute;
+  margin-left: 540px;
+  margin-top: -155px;
+  color: white;
+}
+.team{
+  position: absolute;
+  margin-left: 400px;
+  margin-top: -115px;
+  color: white;
+}
+#investor{
+  position: absolute;
+  margin-left: 540px;
+  margin-top: -115px;
+  color: white;
+}
+#blogs{
+  position: absolute;
+  margin-left: 400px;
+  margin-top: -75px;
+  color: white;
+}
+#circle{
+  position: absolute;
+  margin-left: 540px;
+  margin-top: -75px;
+  color: white;
+}
+#support{
+  position: absolute;
+  margin-left: 400px;
+  margin-top: -35px;
+  color: white;
+}
+#frames{
+  position: absolute;
+  margin-left: 540px;
+  margin-top: -35px;
+  color: white;
+}
+
+#socialmedia{
+  position: absolute;
+  height: 180px;
+  width: 412px;
+  margin-left: 800px;
+  margin-top: -173px;
+}
+#lastbar{
+  position: absolute;
+  cursor: pointer;
+  height: 137px;
+  width: 1349px;
+  margin-left: 0px;
+  margin-top: 10px;
+
+}
